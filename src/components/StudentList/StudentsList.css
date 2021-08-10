@@ -1,0 +1,269 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  z-index: 2;
+  position: sticky;
+}
+
+.formContainer {
+  width: 720px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+  padding: 70px 40px;
+  background-color: #8db489;
+  position: relative;
+  box-shadow: 0 20px 20px rgba(6, 12, 14, 0.25);
+  border-radius: 20px;
+  z-index: 2;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  z-index: 10;
+}
+
+th,
+td {
+  color: rgb(28, 53, 44);
+  border: 1px solid #d5dfeb;
+  text-align: left;
+  padding: 5px 5px;
+  z-index: 10;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+th {
+  font-size: 20px;
+  color: rgb(30, 58, 48);
+  background-color: rgb(142, 192, 140);
+}
+
+td {
+  background-color: rgb(182, 211, 187);
+}
+
+.wrapperForm {
+  display: grid;
+  gap: 7px;
+  z-index: 10;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 20px;
+}
+
+.wrapperTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+  position: relative;
+  color: rgb(22, 46, 24);
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: sticky;
+  z-index: 4;
+}
+
+.inputFields {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: rgb(22, 46, 24);
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.inputFields input {
+  margin-left: 8px;
+}
+
+.add-btn {
+  height: 40px;
+  width: 100%;
+  background-color: #47a14a;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  margin-left: 2%;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+.add-btn:hover {
+  background-color: white;
+  color: #1b3b1c;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.searchBox .searchBoxInput {
+  width: 758px;
+  background-color: rgb(238, 243, 239);
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+  .formContainer {
+    font-size: 12px;
+    width: 240px;
+    height: 400px;
+    padding: 40px 40px;
+  }
+
+  .searchBox {
+    justify-content: left;
+  }
+  
+  .searchBox .searchBoxInput {
+    width: 100px;
+    margin: 0;
+  }
+  
+
+  /* Force table to not be like table anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  table {
+    border: 0;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    font-size: .7em;
+    text-align: left;
+    border: none;
+		border-bottom: 1px solid rgb(58, 92, 55); 
+		position: relative;
+		padding-left: 26%; 
+    width: 100px;
+  }
+  
+  table td::before {
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 0; 
+		white-space: nowrap;
+	}
+
+  thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+  td:nth-of-type(1):before { content: "First Name:"; }
+  td:nth-of-type(2):before { content: "Last Name:"; }
+  td:nth-of-type(3):before { content: "Birth Year:"; }
+  td:nth-of-type(4):before { content: "Identity Number:"; }
+  td:nth-of-type(5):before { content: "Gender:"; }
+}
+
+@media screen and (min-width:700px) and (max-width:1030px) {
+  .formContainer {
+    font-size: 17px;
+    width: 640px;
+    height: 400px;
+    padding: 40px 40px;
+  }
+
+  .searchBox {
+    justify-content: left;
+  }
+
+  .searchBox .searchBoxInput {
+    width: 670px;
+    margin: 0;
+  }
+
+  /* Force table to not be like table anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  table {
+    border: 0;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    font-size: 17px;
+    text-align: left;
+    border: none;
+		border-bottom: 1px solid rgb(58, 92, 55); 
+		position: relative;
+		padding-left: 26%; 
+    width: 500px;
+  }
+  
+  table td::before {
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 0; 
+		white-space: nowrap;
+	}
+
+  thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+  td:nth-of-type(1):before { content: "First Name:"; }
+  td:nth-of-type(2):before { content: "Last Name:"; }
+  td:nth-of-type(3):before { content: "Birth Year:"; }
+  td:nth-of-type(4):before { content: "Identity Number:"; }
+  td:nth-of-type(5):before { content: "Gender:"; }
+}

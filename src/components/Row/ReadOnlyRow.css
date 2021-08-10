@@ -1,0 +1,58 @@
+.edit-btn {
+    background-color: #4ba84e;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 12px;
+    margin-right: 5px;
+    transition-duration: 0.4s;
+}
+
+.delete-btn {
+    background-color: #47a14a;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+  
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: white;
+    color: #1b3b1c;
+}
+
+@media screen and (min-width:200px) and (max-width:700px) {
+    .edit-btn {
+        padding: 4px 8px;
+        font-size: 15px;
+    }
+    
+    .delete-btn {
+        padding: 4px 8px;
+        font-size: 15px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1030px) {
+    .edit-btn {
+        padding: 5px 9px;
+        font-size: 17px;
+    }
+    
+    .delete-btn {
+        padding: 5px 9px;
+        font-size: 17px;
+        margin-right: 20px;
+    }
+}

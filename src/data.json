@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "firstName": "Harry",
+    "lastName": "Wilson",
+    "birthYear": "1963",
+    "identityNumber": "81001087654",
+    "gender": "male"
+  },
+  {
+    "id": 2,
+    "firstName": "Lars",
+    "lastName": "Hunting",
+    "birthYear": "1996",
+    "identityNumber": "29801087655",
+    "gender": "male"
+  },
+  {
+    "id": 3,
+    "firstName": "Tom",
+    "lastName": "Hammett",
+    "birthYear": "1976",
+    "identityNumber": "01541087656",
+    "gender": "male"
+  },
+  {
+    "id": 4,
+    "firstName": "Samantha",
+    "lastName": "Smith",
+    "birthYear": "1997",
+    "identityNumber": "01581087658",
+    "gender": "female"
+  },
+  {
+    "id": 5,
+    "firstName": "Henri",
+    "lastName": "Poincare",
+    "birthYear": "2000",
+    "identityNumber": "02310876529",
+    "gender": "male"
+  },
+  {
+    "id": 6,
+    "firstName": "Ada",
+    "lastName": "Lovelace",
+    "birthYear": "1996",
+    "identityNumber": "01112108765",
+    "gender": "female"
+  }
+]

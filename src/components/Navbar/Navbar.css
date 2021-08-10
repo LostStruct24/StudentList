@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #234738;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.navbarTitle {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgb(183, 221, 178);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+.person {
+    color: rgb(183, 221, 178);
+    outline: none;
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+}

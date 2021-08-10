@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import StudentsList from './components/StudentList/StudentsList';
+import Particles from 'react-particles-js';
+
+const particlesOptions = {
+  particles: {
+    line_linked: {
+      color: "rgb(65, 65, 92)"
+    },
+    number: {
+      value: 20,
+      density: {
+        enable: true,
+        value_area: 700
+      }
+    }
+  }
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <StudentsList />
+      <div className="particle">
+        <Particles className='particles'
+            params={particlesOptions} 
+        />
+      </div>
     </div>
   );
 }
